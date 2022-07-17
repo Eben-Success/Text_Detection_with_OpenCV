@@ -1,9 +1,8 @@
-import cv2
+import cv2 as cv
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-
-img = cv2.imread('img')
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-cv2.imshow('Result', img)
-cv2.waitkey
+pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+img = cv.imread('img.png')
+img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+cv.imshow('Result', img)
+cv.waitKey(0)
