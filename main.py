@@ -5,6 +5,10 @@ pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesse
 img = cv.imread('img.png')
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 # print(pytesseract.image_to_string(img))
+
+### Detecting Characters
 print(pytesseract.image_to_boxes(img))
+
+
 cv.imshow('Result', img)
 cv.waitKey(0)
