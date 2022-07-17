@@ -5,3 +5,5 @@ pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesse
 
 img = cv2.imread('img')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+cv2.imshow('Result', img)
+cv2.waitkey
