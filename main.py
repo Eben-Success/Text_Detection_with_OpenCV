@@ -11,6 +11,9 @@ hImg, wImg,_ = img.shape
 boxes = pytesseract.image_to_boxes(img)
 for b in boxes.splitlines():
     print(b)
+    b = b.split(' ')
+    print(b)
+    x,y,w,h = int(b[1]), int(b[2]), int(b[3]), int(b[4])
 
 cv.imshow('Result', img)
 cv.waitKey(0)
